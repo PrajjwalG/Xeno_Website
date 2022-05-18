@@ -1,0 +1,253 @@
+.App {
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+}
+
+.head
+{
+  text-align: center;
+  width:100vw;
+  box-sizing: border-box;
+  height: 8vw;
+  top: 0;
+  background: black 45%;
+  border: 1px solid #CB1A8C;
+  -webkit-backdrop-filter: blur(36px);
+          backdrop-filter: blur(36px);
+  color: #FFFF;
+  font-family: 'Poppins';
+  border: 1px solid rgba(203, 26, 140, 1);
+  padding: 1px;
+  margin: 0 auto;
+}
+
+#xeno
+{
+  position:fixed;
+  width: 10vw;
+  height: 4vw;
+  left: 5vw;
+  top: 0.1vw;
+  font-family: 'Poppins';
+  font-style: normal;
+  font-weight: 700;
+  font-size: 2.5vw;
+  line-height: 4vw;
+}
+
+#account
+{
+  box-sizing: border-box;
+  position: fixed;
+  width: 10vw;
+  height: 3.5vw;
+  left: 65vw;
+  top: 2.6vw;
+  font-size: 1.2vw;
+  border-radius :23.5px;
+  background-color: #1C151F;
+  color: #FFFF;
+  border: 1px solid #CB1A8C;
+  font-family: 'Poppins';
+  font-style: normal;
+  font-weight: 600;
+}
+
+#login
+{
+  box-sizing: border-box;
+  position: fixed;
+  width: 10vw;
+  height: 3.5vw;
+  left: 77vw;
+  top: 2.6vw;
+  font-size: 1.2vw;
+  border-radius :23.5px;
+  border: 1px solid #CB1A8C;
+  background: linear-gradient(90deg, #842ACA 9.87%, #D41984 90.45%);
+  color: #FFFF;
+  font-family: 'Poppins';
+  font-style: normal;
+  font-weight: 600;
+}
+
+.Intro
+{
+  flex-wrap: wrap;
+  text-align: center;
+  box-sizing: border-box;
+  position: relative;
+  width: 100vw;
+  height: 50vw;
+  background: radial-gradient(at 50% 40%,#370d58 3px,black 45%);
+  color: #FFFF;
+  font-family: 'Poppins';
+  margin: 0vw auto;
+}
+
+#leftcoin1
+{
+  top:9vw;
+  left: 0px;
+  float: left;
+  position: relative;
+  width: 8vw;
+}
+
+#rightcoin1
+{
+  float: right;
+  position: relative;
+  width: 7vw;
+  top: 1vw;
+  left: 0px;
+}
+
+#leftcoin2
+{
+  float: left;
+  position: relative;
+  top: -9vw;
+  width: 7vw;
+}
+
+#rightcoin2
+{
+  float: right;
+  position: relative;
+  top: -20vw;
+  width: 10vw;
+}
+
+#PlayStore
+{
+  position: relative;
+  top: -8vw;
+  width: 14vw;
+  left: 1vw;
+}
+
+#AppStore
+{
+  position: relative;
+  top: -8vw;
+  left: 3vw;
+  width: 14vw;
+}
+
+.txt1
+{
+  color: white;
+  text-align: center;
+  position: relative;
+  top: 9vw;
+  color: #FFFF;
+  font-family: 'Poppins';
+  font-style: normal;
+  font-weight: 600;
+  font-size: 3.2vw;
+  margin: 0 7.5vw;
+  line-height: 5vw;
+}
+
+#grntxt
+{
+  background-image: linear-gradient(to bottom ,rgb(47, 172, 82),rgba(255, 255, 255, 1));
+  -webkit-background-clip: text;
+          background-clip: text;
+  color: transparent;
+}
+
+.grytxt
+{
+  color: rgba(154, 154, 154, 1);
+  font-size: 1.2vw;
+  position: relative;
+  left: 0.5vw;
+  margin:0 auto;
+  line-height: 28vw;
+  letter-spacing: 0.05vw;
+}
+
+.Invest
+{
+  flex-wrap: wrap;
+  text-align: center;
+  box-sizing: border-box;
+  position: relative;
+  width: 100vw;
+  height: 50vw;
+  background: black 45%;
+  color: #FFFF;
+  font-family: 'Poppins';
+  margin: 0vw auto;
+}
+
+#USDT
+{
+  width: 55vw;
+  float: left;
+  position: relative;
+  left: 12vw;
+}
+
+#Earn
+{
+  width: 45vw;
+  float: right;
+  position: absolute;
+  top: 15vw;
+  right: 6vw;
+}
+
+#add
+{
+  float: right;
+  top: 25vw;
+  right: 10vw;
+  position: absolute;
+  margin: 0 auto;
+  font-family: Poppins;
+  font-size: 3vw;
+  font-weight: 700;
+  line-height: 7vw;
+  letter-spacing: 0.05em;
+  text-align: right;
+}
+
+#earn
+{
+  position: absolute;
+  float: right;
+  top: 32vw;
+  right: 10vw;
+  margin: 0 auto;
+  color:rgba(13, 221, 146, 1) ;
+  font-family: Poppins;
+  /* font-size: 3vw; */
+  font-weight: bolder;
+  line-height: 7.5vw;
+  letter-spacing: 0.05em;
+  text-align: right;
+}
+
+#see
+{
+  box-sizing: border-box;
+  position: relative;
+  width: 11vw;
+  height: 3.5vw;
+  top: 5.2vw;
+  left: 8vw;
+  line-height: 1vw;
+  font-size: 1.5vw;
+  border-radius :23.5px;
+  background-color: #1C151F;
+  color: #FFFF;
+  border: 1px solid #CB1A8C;
+  font-family: 'Poppins';
+  font-style: normal;
+  font-weight: 600;
+}

@@ -1,38 +1,567 @@
 .App {
   text-align: center;
-}
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
   display: flex;
   flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
+  flex-wrap: wrap;
+  background: black;
+  box-sizing: border-box;
+  width: 101vw;
+}
+
+.head
+{
+  text-align: center;
+  width:101vw;
+  box-sizing: border-box;
+  height: 8vw;
+  top: 0; 
+  background: black 45%;
+  border: 1px solid #CB1A8C;
+  backdrop-filter: blur(36px);
+  color: #FFFF;
+  font-family: 'Poppins';
+  border: 1px solid rgba(203, 26, 140, 1);
+  padding: 1px;
+  margin: 0 0;
+}
+#xeno
+{
+  position:relative;
+  width: 10vw;
+  height: 4vw;
+  left: 5vw;
+  top: 0.1vw;
+  font-family: 'Poppins';
+  font-style: normal;
+  font-weight: 700;
+  font-size: 2.5vw;
+  line-height: 4vw;
+}
+#account
+{
+  box-sizing: border-box;
+  position: absolute;
+  width: 10vw;
+  height: 3.5vw;
+  left: 65vw;
+  top: 2.6vw;
+  font-size: 1.2vw;
+  border-radius :23.5px;
+  background-color: #1C151F;
+  color: #FFFF;
+  border: 1px solid #CB1A8C;
+  font-family: 'Poppins';
+  font-style: normal;
+  font-weight: 600;
+}
+#login
+{
+  box-sizing: border-box;
+  position: absolute;
+  width: 10vw;
+  height: 3.5vw;
+  left: 77vw;
+  top: 2.6vw;
+  font-size: 1.2vw;
+  border-radius :23.5px;
+  border: 1px solid #CB1A8C;
+  background: linear-gradient(90deg, #842ACA 9.87%, #D41984 90.45%);
+  color: #FFFF;
+  font-family: 'Poppins';
+  font-style: normal;
+  font-weight: 600;
+
+}
+
+.Intro
+{
+  flex-wrap: wrap;
+  text-align: center;
+  box-sizing: border-box;
+  position: relative;
+  width: 100vw;
+  height: 50vw;
+  background: radial-gradient(at 50% 40%,#370d58 3px,black 45%);
+  color: #FFFF;
+  font-family: 'Poppins';
+  margin: 0vw auto;
+}
+#leftcoin1
+{
+  top:9vw;
+  left: 0px;
+  float: left;
+  position: relative;
+  width: 8vw;
+}
+#rightcoin1
+{
+  float: right;
+  position: relative;
+  width: 7vw;
+  top: 1vw;
+  left: 0px;
+}
+#leftcoin2
+{
+  float: left;
+  position: relative;
+  top: -9vw;
+  width: 7vw;
+}
+#rightcoin2
+{
+  float: right;
+  position: relative;
+  top: -20vw;
+  width: 10vw;
+}
+#PlayStore
+{
+  position: relative;
+  top: -8vw;
+  width: 14vw;
+  left: 4vw;
+}
+#AppStore
+{
+  position: relative;
+  top: -8vw;
+  left: 1vw;
+  width: 14vw;
+}
+.txt1
+{
   color: white;
+  text-align: center;
+  position: relative;
+  top: 9vw;
+  color: #FFFF;
+  font-family: 'Poppins';
+  font-style: normal;
+  font-weight: 600;
+  font-size: 3.2vw;
+  margin: 0 7.5vw;
+  line-height: 5vw;
+}
+#grntxt
+{
+  background-image: linear-gradient(to bottom ,rgb(47, 172, 82),rgba(255, 255, 255, 1));
+  background-clip: text;
+  color: transparent;
+}
+.grytxt
+{
+  color: rgba(154, 154, 154, 1);
+  font-size: 1.2vw;
+  position: relative;
+  left: 0.5vw;
+  margin:0 auto;
+  line-height: 28vw;
+  letter-spacing: 0.05vw;
+}
+.Invest
+{
+  flex-wrap: wrap;
+  text-align: center;
+  box-sizing: border-box;
+  position: relative;
+  width: 100vw;
+  height: 50vw;
+  background: black 45%;
+  color: #FFFF;
+  font-family: 'Poppins';
+  margin: 0vw auto;
+}
+.months h2
+{
+  position: relative;
+  font-size: 1vw;
+  padding: 1vw;
+  font-family: 'Poppins';
+  font-style: normal;
+  font-weight: 600;
+  font-size: 1.8vw;
+}
+#daily
+{
+  float: left;
+  position: relative;
+  left: -75vw;
+  top: 14vw;
+}
+#month1
+{
+  float: left;
+  position: relative;
+  left: -68vw;
+  top: 14vw;
+}
+#month2
+{
+  float: left;
+  position: relative;
+  left: -45vw;
+  top: 7vw;
+}
+#USDT
+{
+  width: 55vw;
+  float: left;
+  position: relative;
+  left: 12vw;
+}
+#Earn
+{
+  width: 45vw;
+  float: right;
+  position: absolute;
+  top: 15vw;
+  right: 6vw;
+}
+#add
+{
+  float: right;
+  top: 25vw;
+  right: 10vw;
+  position: absolute;
+  margin: 0 auto;
+
+  font-family: Poppins;
+  font-size: 3vw;
+  font-weight: 700;
+  line-height: 7vw;
+  letter-spacing: 0.05em;
+  text-align: right;
+
+}
+#earn
+{
+  position: absolute;
+  float: right;
+  top: 32vw;
+  right: 10vw;
+  margin: 0 auto;
+  color:rgba(13, 221, 146, 1) ;
+
+  font-family: Poppins;
+  /* font-size: 3vw; */
+  font-weight: bolder;
+  line-height: 7.5vw;
+  letter-spacing: 0.05em;
+  text-align: right;
+}
+#see
+{
+  box-sizing: border-box;
+  position: relative;
+  width: 11vw;
+  height: 3.5vw;
+  top: 5.2vw;
+  left: -1vw;
+  line-height: 1vw;
+  font-size: 1.5vw;
+  border-radius :23.5px;
+  background-color: #1C151F;
+  color: #FFFF;
+  border: 1px solid #CB1A8C;
+  font-family: 'Poppins';
+  font-style: normal;
+  font-weight: 600;
+}
+#period
+{
+  float: left;
+  position: relative;
+  left: -48vw;
+  top: 4vw;
+
+}
+#amount
+{
+  float: left;
+  position: relative;
+  left: -60vw;
+  top: 15vw;
+}
+#addmoney
+{
+  position: absolute;
+  float: left;
+  top: 38vw;
+  left: 6vw;
+  width: 10vw;
+  height: 3.5vw;
+  font-size: 1.2vw;
+  border-radius :23.5px;
+  border: 1px solid #CB1A8C;
+  background: linear-gradient(90deg, #842ACA 9.87%, #D41984 90.45%);
+  color: #FFFF;
+  font-family: 'Poppins';
+  font-style: normal;
+  font-weight: 600;
+}
+.points
+{
+  -webkit-appearance: none;  /* Override default CSS styles */
+  appearance: none;
+  position: absolute;
+  float: left;
+  
+  outline: none;
+  color: transparent;
+  height: 1vw;
+  box-shadow: 1vw 1vw 1vw #000000, 0vw 0vw 1vw #0d0d0d;
+  border: 1vw solid #000000;
+  border-radius: 3vw;
+}
+#range1
+{
+  width: 40vw;
+  left: 5vw;
+  top: 31vw;
+}
+#range2
+{
+  width: 40vw;
+  left: 5vw;
+  top: 23vw;
+}
+/* Mouse-over effects */
+.points:hover {
+  opacity: 1; /* Fully shown on mouse-over */
 }
 
-.App-link {
-  color: #61dafb;
+/* The slider handle (use -webkit- (Chrome, Opera, Safari, Edge) and -moz- (Firefox) to override default look) */
+.points#range1::-webkit-slider-thumb {
+  -webkit-appearance: none; /* Override default look */
+  appearance: none;
+  width: 1vw; /* Set a specific slider handle width */
+  height: 3.8vw; /* Slider handle height */
+  background: rgba(13, 221, 146, 1) ; /* Green background */
+  cursor: pointer; /* Cursor on hover */
+}
+.points#range2::-webkit-slider-thumb
+{
+  -webkit-appearance: none; /* Override default look */
+  appearance: none;
+  width: 13.3vw; /* Set a specific slider handle width */
+  height: 1.5vw; /* Slider handle height */
+  background: rgb(0, 102, 255) ; /* Green background */
+  cursor: pointer; /* Cursor on hover */
+}
+#vb
+{
+  float: left;
+  position: absolute;
+  top: 37.75vw;
+  left: 32vw;
+  font-family: 'Poppins';
+  font-style: normal;
+  font-weight: 600;
+  font-size: 1.5vw;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.Bank
+{
+  flex-wrap: wrap;
+  text-align: center;
+  box-sizing: border-box;
+  position: relative;
+  width: 100vw;
+  height: 50vw;
+  background: radial-gradient(at 35% 45%,#370d58 9px,black 55%);
+  color: #FFFF;
+  font-family: 'Poppins';
+  margin: 0vw auto;
+}
+#otp
+{
+  width: 68vw;
+}
+#demo
+{
+  box-sizing: border-box;
+  position: relative;
+  float: right;
+  width: 10vw;
+  height: 3.5vw;
+  top: 30vw;
+  right: 44.6vw;
+  font-size: 1.2vw;
+  border-radius :23.5px;
+  background-color: #1C151F;
+  color: #FFFF;
+  border: 1px solid #CB1A8C;
+  font-family: 'Poppins';
+  font-style: normal;
+  font-weight: 600;
+}
+.Email
+{
+  flex-wrap: wrap;
+  text-align: center;
+  box-sizing: border-box;
+  position: relative;
+  width: 100vw;
+  height: 70vw;
+  background: radial-gradient(at 85% 50%,#370d58 13vw,black 70%);
+  color: #FFFF;
+  font-family: 'Poppins';
+  margin: 0vw auto;
+}
+#etremail
+{
+  width: 90vw;
+  position: relative;
+  top: 10vw;
+  left: -0.5vw;
+}
+#learn
+{
+  box-sizing: border-box;
+  position: relative;
+  float: left;
+  top: 45vw;
+  left: 10vw;
+  width: 10vw;
+  height: 3.5vw;
+  font-size: 1.2vw;
+  border-radius :23.5px;
+  background-color: #1C151F;
+  color: #FFFF;
+  border: 1px solid #CB1A8C;
+  font-family: 'Poppins';
+  font-style: normal;
+  font-weight: 600;
+}
+.Info
+{
+  flex-wrap: wrap;
+  /* text-align: center */
+  box-sizing: border-box;
+  position: relative;
+  width: 100vw;
+  height: 40vw;
+  background: radial-gradient(at 5% 65%,#370d58 8vw,black 60%);
+  color: #FFFF;
+  font-family: 'Poppins';
+  margin: 0vw auto;
+}
+#group
+{
+  width:80vw;
+  position: relative;
+  top: -1vw;
+  align-items: center;
+}
+.Support
+{
+  flex-wrap: wrap;
+  text-align: center;
+  box-sizing: border-box;
+  position: relative;
+  width: 100vw;
+  height: 60vw;
+  background: linear-gradient(to bottom,#2f1338 ,#3b1947 25%,black 80%);
+  color: #FFFF;
+  font-family: 'Poppins';
+  margin: 0vw auto; 
+}
+#founder
+{
+  width :50vw;
+  position: relative;
+  top: 5vw;
+}
+.End
+{
+  flex-wrap: wrap;
+  text-align: center;
+  box-sizing: border-box;
+  position: relative;
+  width: 100vw;
+  height: 92vw;
+  background: radial-gradient(at 50% 40%,#370d58 3px,black 45%);
+  color: #FFFF;
+  font-family: 'Poppins';
+  margin: 0vw auto;
+}
+#endxeno
+{
+  width: 100vw;
+}
+#Download
+{
+  box-sizing: border-box;
+  position: relative;
+  width: 10vw;
+  height: 3.5vw;
+  font-size: 1.2vw;
+  border-radius :23.5px;
+  border: 1px solid #CB1A8C;
+  background: linear-gradient(90deg, #842ACA 9.87%, #D41984 90.45%);
+  color: #FFFF;
+  font-family: 'Poppins';
+  font-style: normal;
+  font-weight: 600;
+  top: -13vw;
+  left: -1.4vw;
+}
+.bottom
+{
+  text-align: center;
+  top: -8.5vw;
+  display: flex;
+  position: relative;
+  float: right;
+  font-family: 'Poppins';
+  font-style: normal;
+  font-weight: 600;
+  font-size: 1vw;
+  right: 2vw;
+  padding-right: 1vw;
+  padding-left: 1vw;
+}
+a:visited { 
+  text-decoration: none; 
+  color: white; 
+ }
+a:hover 
+{ text-decoration: none; 
+  color:#b681e2;
+}
+ a:link
+ {
+   text-decoration: none;
+ }
+a
+{
+  padding: 3vw;
+}
+#line
+{
+  border: 0;
+  height: 1px;
+  width: 75vw;
+  background-image: linear-gradient(to right, #832ACB,#D31A85 );
+  position: relative;
+  top: -10vw;
+}
+.close
+{
+  position: relative;
+  top: -20vw;
+  margin: 0 0;
+  padding: 0;
+}
+#copyright
+{
+  float: left;
+  left: 12.5vw;
+}
+#contact
+{
+  float: right;
+  left: -12.5vw;
 }
