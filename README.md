@@ -1,6 +1,6 @@
 # React website Live link
 
-This project is live at ([https://github.com/facebook/create-react-app](https://xeno-web-updated.netlify.app/)).
+This project is live at ([Xeno](https://xeno-web-updated.netlify.app/)).
 
 # Getting Started with Create React App
 
