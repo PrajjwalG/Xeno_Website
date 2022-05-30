@@ -1,10 +1,12 @@
 import React, { Component } from 'react'
-import founder from '../founder.png';
+import founder2 from '../founder2.png'
 class Support extends Component {
   render() {
     return (
       <div className='Support'>
-       <img src={founder} id = 'founder'/>
+        <picture>
+        <img src={founder2} id = 'founder'/>
+        </picture>
       </div>
     )
   }

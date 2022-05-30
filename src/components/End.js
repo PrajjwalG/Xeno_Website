@@ -1,12 +1,17 @@
 import React, { Component } from 'react'
 import pic from '../end.png';
+import pic2 from '../end2.png'
 class End extends Component {
   render() {
     return (
       <div className='End'>
-      <img src={pic} id = 'endxeno'/>
+        <picture>
+        <source media="(max-width: 500px)" srcSet={pic2}/>
+        <img src={pic} id = 'endxeno'/>
+        </picture>
+      
       <button id = 'Download'>Download</button>
-      <h2 id='xeno'>Xeno</h2>
+      <h2 id='xeno2'>Xeno</h2>
       <div className='bottom'>
         <a href=''><h2>About us</h2></a>
         <a href=''><h2>Terms</h2></a>

@@ -1,3 +1,5 @@
+
+html, body {margin: 0; padding: 0; overflow-x:hidden;}
 .App {
   text-align: center;
   display: flex;
@@ -5,16 +7,15 @@
   flex-wrap: wrap;
   background: black;
   box-sizing: border-box;
-  width: 101vw;
+  width: 100vw;
+  max-width: 100%;
 }
 
 .head
 {
   text-align: center;
-  width:101vw;
-  box-sizing: border-box;
-  height: 8vw;
   top: 0; 
+  box-sizing: border-box;
   background: black 45%;
   border: 1px solid #CB1A8C;
   backdrop-filter: blur(36px);
@@ -23,17 +24,22 @@
   border: 1px solid rgba(203, 26, 140, 1);
   padding: 1px;
   margin: 0 0;
+  max-width: 100%;
+  width:101vw;
+  height: 8vw;
 }
 #xeno
 {
   position:relative;
+  font-family: 'Poppins';
+  font-style: normal;
+  font-weight: 700;
+  
+  
   width: 10vw;
   height: 4vw;
   left: 5vw;
   top: 0.1vw;
-  font-family: 'Poppins';
-  font-style: normal;
-  font-weight: 700;
   font-size: 2.5vw;
   line-height: 4vw;
 }
@@ -41,35 +47,37 @@
 {
   box-sizing: border-box;
   position: absolute;
-  width: 10vw;
-  height: 3.5vw;
-  left: 65vw;
-  top: 2.6vw;
-  font-size: 1.2vw;
-  border-radius :23.5px;
   background-color: #1C151F;
   color: #FFFF;
   border: 1px solid #CB1A8C;
   font-family: 'Poppins';
   font-style: normal;
   font-weight: 600;
+  display: none;
+  width: 10vw;
+  height: 3.5vw;
+  left: 65vw;
+  top: 2.6vw;
+  font-size: 1.2vw;
+  border-radius :23.5px;
 }
 #login
 {
   box-sizing: border-box;
   position: absolute;
-  width: 10vw;
-  height: 3.5vw;
-  left: 77vw;
-  top: 2.6vw;
-  font-size: 1.2vw;
-  border-radius :23.5px;
   border: 1px solid #CB1A8C;
   background: linear-gradient(90deg, #842ACA 9.87%, #D41984 90.45%);
   color: #FFFF;
   font-family: 'Poppins';
   font-style: normal;
   font-weight: 600;
+  display: none;
+  width: 10vw;
+  height: 3.5vw;
+  left: 77vw;
+  top: 2.6vw;
+  font-size: 1.2vw;
+  border-radius :23.5px;
 
 }
 
@@ -79,25 +87,56 @@
   text-align: center;
   box-sizing: border-box;
   position: relative;
-  width: 100vw;
-  height: 50vw;
   background: radial-gradient(at 50% 40%,#370d58 3px,black 45%);
   color: #FFFF;
   font-family: 'Poppins';
   margin: 0vw auto;
+  max-width: 100%;
+  width: 100vw;
+  height: 50vw;
 }
+#dwnload
+{
+  display: none;
+}
+#investnow
+{
+  box-sizing: border-box;
+  position: relative;
+  border: 1px solid #CB1A8C;
+  background: linear-gradient(90deg, #842ACA 9.87%, #D41984 90.45%);
+  color: #FFFF;
+  font-family: 'Poppins';
+  font-style: normal;
+  font-weight: 600;
+  width: 10vw;
+  height: 3.5vw;
+  left: 1.5vw;
+  top:2vw;
+  font-size: 1.2vw;
+  border-radius :23.5px;
+}
+#join
+  {
+    top:1vw;
+    font-size: 1.5vw;
+    line-height: 22vw;
+
+  }
 #leftcoin1
 {
-  top:9vw;
-  left: 0px;
   float: left;
   position: relative;
+
+  top:9vw;
+  left: 0px;
   width: 8vw;
 }
 #rightcoin1
 {
   float: right;
   position: relative;
+
   width: 7vw;
   top: 1vw;
   left: 0px;
@@ -106,19 +145,22 @@
 {
   float: left;
   position: relative;
-  top: -9vw;
+
+  top: 1vw;
   width: 7vw;
 }
 #rightcoin2
 {
   float: right;
   position: relative;
-  top: -20vw;
+
+  top: -1vw;
   width: 10vw;
 }
 #PlayStore
 {
   position: relative;
+  display: none;
   top: -8vw;
   width: 14vw;
   left: 4vw;
@@ -126,6 +168,7 @@
 #AppStore
 {
   position: relative;
+  display: none;
   top: -8vw;
   left: 1vw;
   width: 14vw;
@@ -135,11 +178,12 @@
   color: white;
   text-align: center;
   position: relative;
-  top: 9vw;
   color: #FFFF;
   font-family: 'Poppins';
   font-style: normal;
   font-weight: 600;
+
+  top: 9vw;
   font-size: 3.2vw;
   margin: 0 7.5vw;
   line-height: 5vw;
@@ -149,16 +193,18 @@
   background-image: linear-gradient(to bottom ,rgb(47, 172, 82),rgba(255, 255, 255, 1));
   background-clip: text;
   color: transparent;
+  font-size: 4.5vw;
 }
 .grytxt
 {
   color: rgba(154, 154, 154, 1);
-  font-size: 1.2vw;
   position: relative;
   left: 0.5vw;
   margin:0 auto;
-  line-height: 28vw;
   letter-spacing: 0.05vw;
+
+  font-size: 1.2vw;
+  line-height: 1vw;
 }
 .Invest
 {
@@ -166,70 +212,77 @@
   text-align: center;
   box-sizing: border-box;
   position: relative;
-  width: 100vw;
-  height: 50vw;
   background: black 45%;
   color: #FFFF;
   font-family: 'Poppins';
   margin: 0vw auto;
+
+  width: 100vw;
+  height: 50vw;
+  max-width: 100%;
 }
 .months h2
 {
   position: relative;
-  font-size: 1vw;
-  padding: 1vw;
   font-family: 'Poppins';
   font-style: normal;
   font-weight: 600;
+
+  font-size: 1vw;
+  padding: 1vw;
   font-size: 1.8vw;
 }
 #daily
 {
   float: left;
   position: relative;
-  left: -75vw;
-  top: 14vw;
+
+  left: -48vw;
+  top: 15vw;
 }
 #month1
 {
   float: left;
   position: relative;
-  left: -68vw;
-  top: 14vw;
+
+  left: -42vw;
+  top: 15vw;
 }
 #month2
 {
   float: left;
   position: relative;
-  left: -45vw;
-  top: 7vw;
+
+  left: -36vw;
+  top: 15vw;
 }
 #USDT
 {
-  width: 55vw;
   float: left;
   position: relative;
-  left: 12vw;
+  width: 55vw;
+  left: 9vw;
 }
 #Earn
 {
-  width: 45vw;
   float: right;
   position: absolute;
+
+  width: 45vw;
   top: 15vw;
   right: 6vw;
 }
 #add
 {
   float: right;
-  top: 25vw;
-  right: 10vw;
   position: absolute;
   margin: 0 auto;
-
   font-family: Poppins;
-  font-size: 3vw;
   font-weight: 700;
+
+  top: 25vw;
+  right: 10vw;
+  font-size: 3vw;
   line-height: 7vw;
   letter-spacing: 0.05em;
   text-align: right;
@@ -239,22 +292,29 @@
 {
   position: absolute;
   float: right;
-  top: 32vw;
-  right: 10vw;
   margin: 0 auto;
-  color:rgba(13, 221, 146, 1) ;
-
+  color:rgba(13, 221, 146, 1);
   font-family: Poppins;
   /* font-size: 3vw; */
   font-weight: bolder;
+  font-size: 3vw;
+  text-align: right;
+  top: 32vw;
+  right: 10vw;
   line-height: 7.5vw;
   letter-spacing: 0.05em;
-  text-align: right;
 }
 #see
 {
   box-sizing: border-box;
   position: relative;
+  background-color: #1C151F;
+  color: #FFFF;
+  border: 1px solid #CB1A8C;
+  font-family: 'Poppins';
+  font-style: normal;
+  font-weight: 600;
+
   width: 11vw;
   height: 3.5vw;
   top: 5.2vw;
@@ -262,44 +322,41 @@
   line-height: 1vw;
   font-size: 1.5vw;
   border-radius :23.5px;
-  background-color: #1C151F;
-  color: #FFFF;
-  border: 1px solid #CB1A8C;
-  font-family: 'Poppins';
-  font-style: normal;
-  font-weight: 600;
 }
 #period
 {
   float: left;
   position: relative;
+
   left: -48vw;
-  top: 4vw;
+  top: 18vw;
 
 }
 #amount
 {
   float: left;
   position: relative;
+
   left: -60vw;
-  top: 15vw;
+  top: 28vw;
 }
 #addmoney
 {
   position: absolute;
   float: left;
-  top: 38vw;
-  left: 6vw;
-  width: 10vw;
-  height: 3.5vw;
-  font-size: 1.2vw;
-  border-radius :23.5px;
   border: 1px solid #CB1A8C;
   background: linear-gradient(90deg, #842ACA 9.87%, #D41984 90.45%);
   color: #FFFF;
   font-family: 'Poppins';
   font-style: normal;
   font-weight: 600;
+
+  top: 38vw;
+  left: 6vw;
+  width: 10vw;
+  height: 3.5vw;
+  font-size: 1.2vw;
+  border-radius :20.5px;
 }
 .points
 {
@@ -307,12 +364,12 @@
   appearance: none;
   position: absolute;
   float: left;
-  
   outline: none;
   color: transparent;
-  height: 1vw;
   box-shadow: 1vw 1vw 1vw #000000, 0vw 0vw 1vw #0d0d0d;
   border: 1vw solid #000000;
+
+  height: 1vw;
   border-radius: 3vw;
 }
 #range1
@@ -336,29 +393,32 @@
 .points#range1::-webkit-slider-thumb {
   -webkit-appearance: none; /* Override default look */
   appearance: none;
-  width: 1vw; /* Set a specific slider handle width */
-  height: 3.8vw; /* Slider handle height */
   background: rgba(13, 221, 146, 1) ; /* Green background */
   cursor: pointer; /* Cursor on hover */
+
+  width: 1vw; /* Set a specific slider handle width */
+  height: 3.8vw; /* Slider handle height */
 }
 .points#range2::-webkit-slider-thumb
 {
   -webkit-appearance: none; /* Override default look */
   appearance: none;
-  width: 13.3vw; /* Set a specific slider handle width */
-  height: 1.5vw; /* Slider handle height */
   background: rgb(0, 102, 255) ; /* Green background */
   cursor: pointer; /* Cursor on hover */
+
+  width: 13.3vw; /* Set a specific slider handle width */
+  height: 1.5vw; /* Slider handle height */
 }
 #vb
 {
   float: left;
   position: absolute;
-  top: 37.75vw;
-  left: 32vw;
   font-family: 'Poppins';
   font-style: normal;
   font-weight: 600;
+
+  top: 37.75vw;
+  left: 32vw;
   font-size: 1.5vw;
 }
 
@@ -368,12 +428,14 @@
   text-align: center;
   box-sizing: border-box;
   position: relative;
-  width: 100vw;
-  height: 50vw;
   background: radial-gradient(at 35% 45%,#370d58 9px,black 55%);
   color: #FFFF;
   font-family: 'Poppins';
   margin: 0vw auto;
+
+  width: 100vw;
+  height: 50vw;
+  max-width: 100%;
 }
 #otp
 {
@@ -384,18 +446,19 @@
   box-sizing: border-box;
   position: relative;
   float: right;
-  width: 10vw;
-  height: 3.5vw;
-  top: 30vw;
-  right: 44.6vw;
-  font-size: 1.2vw;
-  border-radius :23.5px;
   background-color: #1C151F;
   color: #FFFF;
   border: 1px solid #CB1A8C;
   font-family: 'Poppins';
   font-style: normal;
   font-weight: 600;
+
+  width: 10vw;
+  height: 3.5vw;
+  top: 30vw;
+  right: 44.6vw;
+  font-size: 1.2vw;
+  border-radius :23.5px;
 }
 .Email
 {
@@ -403,17 +466,20 @@
   text-align: center;
   box-sizing: border-box;
   position: relative;
-  width: 100vw;
-  height: 70vw;
   background: radial-gradient(at 85% 50%,#370d58 13vw,black 70%);
   color: #FFFF;
   font-family: 'Poppins';
   margin: 0vw auto;
+
+  width: 100vw;
+  height: 70vw;
+  max-width: 100%;
 }
 #etremail
 {
-  width: 90vw;
   position: relative;
+
+  width: 90vw;
   top: 10vw;
   left: -0.5vw;
 }
@@ -422,18 +488,19 @@
   box-sizing: border-box;
   position: relative;
   float: left;
-  top: 45vw;
-  left: 10vw;
-  width: 10vw;
-  height: 3.5vw;
-  font-size: 1.2vw;
-  border-radius :23.5px;
   background-color: #1C151F;
   color: #FFFF;
   border: 1px solid #CB1A8C;
   font-family: 'Poppins';
   font-style: normal;
   font-weight: 600;
+
+  top: 45vw;
+  left: 10vw;
+  width: 10vw;
+  height: 3.5vw;
+  font-size: 1.2vw;
+  border-radius :23.5px;
 }
 .Info
 {
@@ -441,19 +508,22 @@
   /* text-align: center */
   box-sizing: border-box;
   position: relative;
-  width: 100vw;
-  height: 40vw;
   background: radial-gradient(at 5% 65%,#370d58 8vw,black 60%);
   color: #FFFF;
   font-family: 'Poppins';
   margin: 0vw auto;
+
+  width: 100vw;
+  height: 40vw;
+  max-width: 100%;
 }
 #group
 {
-  width:80vw;
   position: relative;
-  top: -1vw;
   align-items: center;
+
+  width:80vw;
+  top: -1vw;
 }
 .Support
 {
@@ -461,17 +531,20 @@
   text-align: center;
   box-sizing: border-box;
   position: relative;
-  width: 100vw;
-  height: 60vw;
   background: linear-gradient(to bottom,#2f1338 ,#3b1947 25%,black 80%);
   color: #FFFF;
   font-family: 'Poppins';
   margin: 0vw auto; 
+
+  width: 100vw;
+  height: 60vw;
+  max-width: 100%;
 }
 #founder
 {
-  width :50vw;
   position: relative;
+
+  width :80vw;
   top: 5vw;
 }
 .End
@@ -480,12 +553,14 @@
   text-align: center;
   box-sizing: border-box;
   position: relative;
-  width: 100vw;
-  height: 92vw;
   background: radial-gradient(at 50% 40%,#370d58 3px,black 45%);
   color: #FFFF;
   font-family: 'Poppins';
   margin: 0vw auto;
+
+  width: 100vw;
+  height: 80vw;
+  max-width: 100%;
 }
 #endxeno
 {
@@ -495,33 +570,36 @@
 {
   box-sizing: border-box;
   position: relative;
-  width: 10vw;
-  height: 3.5vw;
-  font-size: 1.2vw;
-  border-radius :23.5px;
   border: 1px solid #CB1A8C;
   background: linear-gradient(90deg, #842ACA 9.87%, #D41984 90.45%);
   color: #FFFF;
   font-family: 'Poppins';
   font-style: normal;
   font-weight: 600;
+
+  width: 10vw;
+  height: 3.5vw;
+  font-size: 1.2vw;
+  border-radius :23.5px;
   top: -13vw;
   left: -1.4vw;
 }
 .bottom
 {
   text-align: center;
-  top: -8.5vw;
   display: flex;
   position: relative;
   float: right;
   font-family: 'Poppins';
   font-style: normal;
   font-weight: 600;
-  font-size: 1vw;
-  right: 2vw;
+
+  top: -8.5vw;
+  font-size: 0.75vw;
+  right: 8.5vw;
   padding-right: 1vw;
   padding-left: 1vw;
+  max-width: 100%;
 }
 a:visited { 
   text-decoration: none; 
@@ -542,26 +620,403 @@ a
 #line
 {
   border: 0;
-  height: 1px;
-  width: 75vw;
   background-image: linear-gradient(to right, #832ACB,#D31A85 );
   position: relative;
+
+  height: 1px;
+  width: 75vw;
   top: -10vw;
 }
 .close
 {
   position: relative;
-  top: -20vw;
   margin: 0 0;
   padding: 0;
+
+  top: -20vw;
+  max-width: 100%;
 }
 #copyright
 {
   float: left;
   left: 12.5vw;
+  top: -8vw;
 }
 #contact
 {
   float: right;
   left: -12.5vw;
+  top: -8vw;
+}
+#xeno2
+{
+  position: relative;
+  right: 35vw;
+  bottom: 0.25vw;
+}
+@media only screen and (max-width: 500px)
+{
+  .head{
+      height: 12vw;
+  }
+  #xeno
+  {
+  left: 5vw;
+  top: 0vw;
+  font-size: 4.5vw;
+  line-height: 4vw;
+  }
+  #account
+  {
+    display: block;
+  width: 17vw;
+  height: 7vw;
+  left: 55vw;
+  top: 2.6vw;
+  font-size: 2.2vw;
+  border-radius :23.5px;
+  }
+  #grntxt
+  {
+    font-size: 7vw;
+  }
+  #login
+  {
+  display: block;
+  width: 17vw;
+  height: 7vw;
+  left: 77vw;
+  top: 2.6vw;
+  font-size: 3.2vw;
+  border-radius :23.5px;
+  }
+  .Intro
+  {
+    height: 75vw;
+  }
+  #dwnload
+  {
+    display: block;
+    top: 7vw;
+  }
+  #investnow
+  {
+    top: 5vw;
+    left: 3vw;
+    width: 25vw;
+    height: 9vw;
+    font-size: 3.8vw;
+  }
+  #join
+  {
+    top: 4vw;
+    font-size: 3vw;
+    line-height: 28vw;
+    color: grey;
+  }
+  #leftcoin1
+  {
+  top:0vw;
+  left: 0px;
+  width: 20vw;
+  }
+  #rightcoin1
+  {
+  width: 15vw;
+  top: 1vw;
+  left: -5px;
+  }
+  #leftcoin2
+  {
+  top: 1vw;
+  width: 11vw;
+  }
+  #rightcoin2
+  {
+    top: 3vw;
+  width: 15vw;
+  }
+  #PlayStore
+  {
+    display: block;
+  top: -5vw;
+  width: 25vw;
+  left: 27vw;
+  }
+  #AppStore
+{
+  display: block;
+  position: relative;
+  top: -5vw;
+  left: 38vw;
+  width: 25vw;
+}
+.txt1
+{
+  top: 15vw;
+  font-size: 6.2vw;
+  margin: 0 7.5vw;
+  line-height: 8vw;
+  text-align: center;
+  margin: 0 15vw;
+}
+.grytxt
+{
+  letter-spacing: 0.05vw;
+  left: 0.5vw;
+  font-size: 2.2vw;
+  top: 3vw;
+}
+.Invest
+{
+  height: 155vw;
+}
+.months h2
+{
+  font-size: 4vw;
+  padding: 1vw;
+}
+#daily
+{
+  left: -75vw;
+  top: 34vw;
+}
+#month1
+{
+  left: 39vw;
+  top: 20vw;
+}
+#month2
+{
+
+  left: 55vw;
+  top: 20vw;
+}
+#USDT
+{
+  width: 55vw;
+  top: 3vw;
+  left: 24vw;
+}
+#Earn
+{
+  width: 75vw;
+  top: 60vw;
+  right: 13vw;
+}
+#add
+{
+  top: 78vw;
+  right: 19vw;
+  font-size: 7vw;
+  line-height: 7vw;
+  letter-spacing: 0.05em;
+  text-align: right;
+
+}
+#earn
+{
+  top: 90vw;
+  right: 20vw;
+  line-height: 7.5vw;
+  letter-spacing: 0.05em;
+  font-size: 7vw;
+}
+#see
+{
+  width: 31vw;
+  height:9vw;
+  left: -30vw;
+  top: 27vw;
+  font-size: 4.5vw;
+  border-radius :23.5px;
+}
+#period
+{
+
+  left: -48vw;
+  top: 33vw;
+  font-size: 2.8vw;
+}
+#amount
+{
+  left: -45vw;
+  top: 100vw;
+  font-size: 2.8vw;
+}
+#addmoney
+{
+  top: 132vw;
+  left: 11vw;
+  width: 25vw;
+  height: 10vw;
+  font-size: 3.2vw;
+  border-radius :23.5px;
+}
+.points
+{
+
+  height: 1vw;
+  border-radius: 3vw;
+}
+#range1
+{
+  width: 90vw;
+  left: 5vw;
+  top: 118vw;
+}
+#range2
+{
+  width: 90vw;
+  left: 3.5vw;
+  top: 54vw;
+}
+/* Mouse-over effects */
+.points:hover {
+  opacity: 1; /* Fully shown on mouse-over */
+}
+
+/* The slider handle (use -webkit- (Chrome, Opera, Safari, Edge) and -moz- (Firefox) to override default look) */
+.points#range1::-webkit-slider-thumb {
+ /* Cursor on hover */
+
+  width: 3vw; /* Set a specific slider handle width */
+  height: 7.8vw; /* Slider handle height */
+}
+.points#range2::-webkit-slider-thumb
+{
+  width: 30vw; /* Set a specific slider handle width */
+  height: 2.5vw; /* Slider handle height */
+}
+#vb
+{
+  top: 131vw;
+  left: 52vw;
+  font-size: 4vw;
+}
+
+.Bank
+{
+ width: 100vw;
+  height: 70vw;
+}
+#otp
+{
+  width: 78vw;
+  position: relative;
+  left: 3vw;
+}
+#demo
+{
+
+  top: 5vw;
+  right: 32vw;
+  font-size: 5vw;
+  width: 32vw;
+  height: 10vw;
+  border-radius :23.5px;
+}
+.Email
+{
+  width: 100vw;
+  height: 80vw;
+  background: radial-gradient(at 50% 45%,#370d58 13vw,black 70%);
+
+}
+#etremail
+{
+  width: 80vw;
+  top: 10vw;
+  left: 1vw;
+}
+#learn
+{
+  top: 13vw;
+  left: 35vw;
+  width: 31vw;
+  height: 11vw;
+  font-size: 4vw;
+  border-radius :23.5px;
+}
+.Info
+{
+  width: 100vw;
+  height: 70vw;
+}
+#group
+{
+  position: relative;
+  align-items: center;
+
+  width:90vw;
+  top: -1vw;
+}
+.Support
+{
+  width: 100vw;
+  height: 90vw;
+}
+#founder
+{
+  position: relative;
+
+  width :95vw;
+  top: 5vw;
+}
+.End
+{
+  background: radial-gradient(at 50% 52%,#370d58 3px,black 45%);
+
+  width: 100vw;
+  height: 280vw;
+}
+#endxeno
+{
+  width: 100vw;
+}
+#Download
+{
+  width: 28vw;
+  height: 10vw;
+  font-size: 4vw;
+  top: -55vw;
+  left: -1.4vw;
+}
+.bottom
+{
+  top: -8.5vw;
+  font-size: 2vw;
+  right: 7.5vw;
+  padding-right: 1vw;
+  padding-left: 1vw;
+}
+#xeno2
+{
+  top: -10vw;
+  font-size: 7vw;
+  left: 0vw;
+}
+#line
+{
+  height: 1px;
+  width: 75vw;
+  top: -10vw;
+}
+.close
+{
+
+  top: -20vw;
+}
+#copyright
+{
+  left: 35vw;
+  font-size: 3vw;
+}
+#contact
+{
+  left: -39vw;
+  font-size:3vw;
+  top: -28vw;
+}
+
 }

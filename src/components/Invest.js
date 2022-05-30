@@ -2,9 +2,14 @@ import React, { Component } from 'react'
 import '../App.css';
 import Earn from '../Earn.png';
 import USDT from '../Invest.png';
-import period from '../slider.png';
+import USDT2 from '../USDT2.png'
 class Invest extends Component {
-getValue()
+  constructor (props) {
+    super(props);
+
+    this.getValue = this.getValue.bind(this)
+}
+getValue = function()
 {
   var t = document.getElementById('range1').value;
   var a;
@@ -35,17 +40,18 @@ getValue()
   }
   document.getElementById('add').innerHTML = a;
   document.getElementById('earn').innerHTML = e;
-
 }
 
   render() {
     return (
       <div className='Invest'>
           <div className=''>
-              <img src={USDT} id = 'USDT'/>
-              <input type="range"  className="points" id='range1' min="1" max="5" defaultValue={1}></input>
+              <picture>
+              <source media="(max-width: 500px)" srcSet={USDT2}/>
+              <img src={USDT} id = 'USDT' alt={USDT2}/></picture>
+              <input type="range"  className="points" id='range1' min="1" max="5" defaultValue={1} ></input>
               <input type="range"  className="points" id='range2' min="1" max="3" defaultValue={3}></input>
-              <button id = 'addmoney' onClick={this.getValue}>Add Money</button>
+              <button id = 'addmoney' onClick={()=>this.getValue()}>Add Money</button>
               <a href=''><h2 id='vb'>View BreakDown ⟶ </h2></a>
               <button id='see'>See how?</button>
               <img src={Earn} id = 'Earn'/>
